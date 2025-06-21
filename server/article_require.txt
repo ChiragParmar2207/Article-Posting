@@ -1,0 +1,33 @@
+2.
+Need to create Project for article posting. where user should be able to register and logic and create topic.
+and can create artical and with selected topic and user can follow and unfollow other user. 
+can get articles of the following users and recent article and user can comment on article.
+
+APIS- --> register user
+      --> login user
+      --> create topic
+      --> get all topics
+      --> create article
+      --> edit article
+      --> delete article
+      --> get all articles
+      --> get articles by topic
+      --> get most recent articles 
+      --> get articles of following users
+      --> comment on artical
+
+
+useUnifiedTopology:
+False by default. Set to true to opt in to using the MongoDB driver's new connection management engine.
+You should set this option to true, except for the unlikely case that it prevents you from maintaining a stable connection.
+
+useCreateIndex :
+False by default. Set to true to make Mongoose's default index build use createIndex() instead of ensureIndex()
+to avoid deprecation warnings from the MongoDB driver.
+
+useNewUrlParser :
+The underlying MongoDB driver has deprecated their current connection string parser. Because this is a major change,
+they added the useNewUrlParser flag to allow users to fall back to the old parser if they find a bug in the new parser.
+You should set useNewUrlParser: true unless that prevents you from connecting.
+Note that if you specify useNewUrlParser: true, you must specify a port in your connection string, like mongodb://localhost:27017/dbname.
+The new url parser does not support connection strings that do not have a port, like mongodb://localhost/dbname.

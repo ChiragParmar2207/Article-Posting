@@ -1,0 +1,227 @@
+data:
+
+user:
+===>
+{
+    "firstName": "Khushi",
+    "lastName": "Baluchi",
+    "userName": "KhushiB",
+    "email": "khushi@gmail.com",
+    "phone": "7695124865",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Chirag",
+    "lastName": "parmar",
+    "userName": "ChigsP",
+    "email": "chirag@gmail.com",
+    "phone": "8154886779",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Ravi",
+    "lastName": "Gohil",
+    "userName": "RaviG",
+    "email": "ravi@gmail.com",
+    "phone": "6353934200",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Ajay",
+    "lastName": "Solanki",
+    "userName": "AjayS",
+    "email": "ajay@gmail.com",
+    "phone": "8458458596",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Shruti",
+    "lastName": "Butani",
+    "userName": "ShrutiB",
+    "email": "shruti@gmail.com",
+    "phone": "9658458457",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Dhaval",
+    "lastName": "Vala",
+    "userName": "DhavalV",
+    "email": "dhaval@gmail.com",
+    "phone": "8254965745",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Devraj",
+    "lastName": "Galchar",
+    "userName": "DevrajG",
+    "email": "devraj@gmail.com",
+    "phone": "8128282350",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Keval",
+    "lastName": "Mojidra",
+    "userName": "KevalM",
+    "email": "keval@gmail.com",
+    "phone": "7490980200",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Vattsal",
+    "lastName": "Dumaniya",
+    "userName": "VattsalD",
+    "email": "vattsal@gmail.com",
+    "phone": "8759856485",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Mini",
+    "lastName": "Shah",
+    "userName": "MiniS",
+    "email": "mini@gmail.com",
+    "phone": "7586304125",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Priya",
+    "lastName": "Kejrival",
+    "userName": "PriyaK",
+    "email": "priya@gmail.com",
+    "phone": "6385985745",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+{
+    "firstName": "Jenisha",
+    "lastName": "Patel",
+    "userName": "JenishaP",
+    "email": "jenisha@gmail.com",
+    "phone": "8956425485",
+    "password": "{{password}}",
+    "passwordConfirm": "{{password}}"
+}
+
+==================================================
+topic:
+===>
+{
+    "topicName": "Entertainment"
+}
+
+{
+    "topicName": "Music"
+}
+
+{
+    "topicName": "Cricket"
+}
+
+{
+    "topicName": "Politics"
+}
+
+{
+    "topicName": "Cartoon"
+}
+
+{
+    "topicName": "Anime"
+}
+
+{
+    "topicName": "Helth"
+}
+
+{
+    "topicName": "PUBG"
+}
+
+{
+    "topicName": "Free Fire"
+}
+
+{
+    "topicName": "Front End"
+}
+
+==================================================
+article:
+===>
+{
+    "topicId": "63f79b2291a5e6e0d43e1cff",
+    "content": "Good Music is hard to find"
+}
+
+{
+    "topicId": "63f79b2b91a5e6e0d43e1d02",
+    "content": "India vs Pakistan match is very interesting."
+}
+
+{
+    "topicId": "63f79b0e91a5e6e0d43e1cfb",
+    "content": "Crupption is everywhere"
+}
+
+{
+    "topicId": "63f79b0991a5e6e0d43e1cf8",
+    "content": "Ranvir and Alia Just married"
+}
+
+{
+    "topicId": "63f79b3f91a5e6e0d43e1d06",
+    "content": "When you sad watch some Cartoons"
+}
+
+==================================================
+comment:
+===>
+{
+    "comment": "Absolutly Right.",
+    "rating": 4,
+    "articleId": "63f7b788407bfe9ec21b96ee"
+}
+
+{
+    "comment": "Seriosly",
+    "rating": 1,
+    "articleId": "63f7b870407bfe9ec21b9700"
+}
+
+{
+    "comment": "Very much fun",
+    "rating": 5,
+    "articleId": "63f7b89a407bfe9ec21b9705"
+}
+
+{
+    "comment": "yaah right",
+    "rating": 4,
+    "articleId": "63f7b808407bfe9ec21b96fa"
+}
+
+{
+    "comment": "Kya kre ab.",
+    "rating": 4,
+    "articleId": "63f61b29bc956fc8d0a8c5f8"
+}
