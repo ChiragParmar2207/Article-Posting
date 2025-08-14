@@ -20,7 +20,7 @@ export const signinUser = createAsyncThunk(
 	async (user, { rejectWithValue }) => {
 		try {
 			const response = await axios.post(
-				'http://127.0.0.1:5050/api/user/signin',
+				'http://127.0.0.1:5000/api/user/signin',
 				user
 			);
 
@@ -45,7 +45,7 @@ export const signupUser = createAsyncThunk(
 	async (user, { rejectWithValue }) => {
 		try {
 			const response = await axios.post(
-				'http://127.0.0.1:5050/api/user/signup',
+				'http://127.0.0.1:5000/api/user/signup',
 				user
 			);
 			const LoggedInUserData = {
@@ -70,7 +70,7 @@ export const signout = createAsyncThunk(
 			const userData = JSON.parse(localStorage.getItem('userData'));
 			const token = userData.token;
 			const response = await axios.post(
-				'http://127.0.0.1:5050/api/user/logout',
+				'http://127.0.0.1:5000/api/user/logout',
 				{},
 				{
 					headers: {

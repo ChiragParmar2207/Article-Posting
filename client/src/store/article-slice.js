@@ -18,7 +18,7 @@ export const getArticles = createAsyncThunk(
 
 			var config = {
 				method: 'get',
-				url: 'http://127.0.0.1:5050/api/article',
+				url: 'http://127.0.0.1:5000/api/article',
 				headers: {
 					Authorization: 'Bearer ' + token,
 				},
@@ -40,7 +40,7 @@ export const getArticlesByTopic = createAsyncThunk(
 
 			var config = {
 				method: 'get',
-				url: `http://127.0.0.1:5050/api/article/${topicId}`,
+				url: `http://127.0.0.1:5000/api/article/${topicId}`,
 				headers: {
 					Authorization: 'Bearer ' + token,
 				},
@@ -62,7 +62,7 @@ export const getArticlesById = createAsyncThunk(
 
 			var config = {
 				method: 'get',
-				url: `http://127.0.0.1:5050/api/article/getarticlebyid/${articleId}`,
+				url: `http://127.0.0.1:5000/api/article/getarticlebyid/${articleId}`,
 				headers: {
 					Authorization: 'Bearer ' + token,
 				},
@@ -82,7 +82,7 @@ export const addArticle = createAsyncThunk(
 			const userData = JSON.parse(localStorage.getItem('userData'));
 			const token = userData.token;
 			const response = await axios.post(
-				'http://127.0.0.1:5050/api/article',
+				'http://127.0.0.1:5000/api/article',
 				article,
 				{
 					headers: {
@@ -107,7 +107,7 @@ export const updateArticle = createAsyncThunk(
 
 			var config = {
 				method: 'patch',
-				url: `http://127.0.0.1:5050/api/article/${data.id}`,
+				url: `http://127.0.0.1:5000/api/article/${data.id}`,
 				headers: {
 					authorization: 'Bearer ' + token,
 					'Content-Type': 'application/json',
@@ -132,7 +132,7 @@ export const deleteArticle = createAsyncThunk(
 
 			var config = {
 				method: 'delete',
-				url: `http://127.0.0.1:5050/api/article/${articleId}`,
+				url: `http://127.0.0.1:5000/api/article/${articleId}`,
 				headers: {
 					authorization: 'Bearer ' + token,
 					'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ export const getFollowers = createAsyncThunk(
 
 			var config = {
 				method: 'get',
-				url: 'http://127.0.0.1:5050/api/follow/getFollowers',
+				url: 'http://127.0.0.1:5000/api/follow/getFollowers',
 				headers: {
 					Authorization: 'Bearer ' + token,
 				},

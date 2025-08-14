@@ -15,7 +15,7 @@ export const getTopics = createAsyncThunk(
 		try {
 			const userData = JSON.parse(localStorage.getItem('userData'));
 			const token = userData.token;
-			const response = await axios.get('http://127.0.0.1:5050/api/topic', {
+			const response = await axios.get('http://127.0.0.1:5000/api/topic', {
 				headers: {
 					Authorization: `Bearer ${token}`,
 				},
@@ -34,7 +34,7 @@ export const addTopic = createAsyncThunk(
 			const userData = JSON.parse(localStorage.getItem('userData'));
 			const token = userData.token;
 			const response = await axios.post(
-				'http://127.0.0.1:5050/api/topic',
+				'http://127.0.0.1:5000/api/topic',
 				topic,
 				{
 					headers: {
