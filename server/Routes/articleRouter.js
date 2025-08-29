@@ -1,44 +1,36 @@
-const express = require('express')
-const router = express.Router()
-const { protect } = require('../Middlewares/authMiddleware')
-const { createArticleMiddleware, updateArticleMiddleware } = require('../Middlewares/articleMiddleware')
+const express = require('express');
+const router = express.Router();
+const { protect } = require('../Middlewares/authMiddleware');
 const {
-    createArticle,
-    updateArticle,
-    deleteArticle,
-    getAllArticles,
-    getArticlesByTopic,
-    getMostRecentArticles,
-    getArticlesOfFollowingUsers
-} = require('../Controllers/articleController')
+	createArticleMiddleware,
+	updateArticleMiddleware,
+} = require('../Middlewares/articleMiddleware');
+const {
+	createArticle,
+	updateArticle,
+	deleteArticle,
+	getAllArticles,
+	getArticlesByTopic,
+	getMostRecentArticles,
+	getArticlesOfFollowingUsers,
+} = require('../Controllers/articleController');
 
-router.use(protect)
+router.use(protect);
 
-router
-    .route('/')
-    .post(protect, createArticleMiddleware, createArticle)
-
-router
-    .route('/:id')
-    .patch(updateArticleMiddleware, updateArticle)
-    .delete(deleteArticle)
+router.route('/').post(protect, createArticleMiddleware, createArticle);
 
 router
-    .route('/')
-    .get(getAllArticles)
+	.route('/:id')
+	.patch(updateArticleMiddleware, updateArticle)
+	.delete(deleteArticle);
 
-router
-    .route('/getArticlesOfFollowingUsers')
-    .get(getArticlesOfFollowingUsers)
+router.route('/').get(getAllArticles);
 
-router
-    .route('/getMostRecentArticles/:number')
-    .get(getMostRecentArticles)
+router.route('/getArticlesOfFollowingUsers').get(getArticlesOfFollowingUsers);
 
+router.route('/getMostRecentArticles/:number').get(getMostRecentArticles);
 
-router
-    .route('/:topicId')
-    .get(getArticlesByTopic)
+router.route('/:topicId').get(getArticlesByTopic);
 
-module.exports = router
+module.exports = router;
 // export default router

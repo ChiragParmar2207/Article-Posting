@@ -1,25 +1,22 @@
-const express = require('express')
-const router = express.Router()
-const { protect } = require('../Middlewares/authMiddleware')
-const { createTopicMiddleware, updateTopicMiddleware } = require('../Middlewares/topicMiddleware')
+const express = require('express');
+const router = express.Router();
+const { protect } = require('../Middlewares/authMiddleware');
 const {
-    createTopic,
-    updateTopic,
-    getAllTopics
-} = require('../Controllers/topicController')
+	createTopicMiddleware,
+	updateTopicMiddleware,
+} = require('../Middlewares/topicMiddleware');
+const {
+	createTopic,
+	updateTopic,
+	getAllTopics,
+} = require('../Controllers/topicController');
 
-router.use(protect)
+router.use(protect);
 
-router
-    .route('/')
-    .get(getAllTopics)
+router.route('/').get(getAllTopics);
 
-router
-    .route('/')
-    .post(createTopicMiddleware, createTopic)
+router.route('/').post(createTopicMiddleware, createTopic);
 
-router
-    .route('/:topicId')
-    .patch(updateTopic, updateTopicMiddleware)
+router.route('/:topicId').patch(updateTopic, updateTopicMiddleware);
 
-module.exports = router
+module.exports = router;
